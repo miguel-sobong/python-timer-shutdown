@@ -3,7 +3,6 @@ A program that shut downs the os with a timer.
 
 Programmer: Miguel Sobong
 Date Started: March 13 2019
-Date Updated: March 13 2019
 To add:
     - Linux Support
 """
