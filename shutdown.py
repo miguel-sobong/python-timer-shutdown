@@ -21,8 +21,6 @@ def main_menu():
 	"""Main menu."""
 	choice = None
 	while True:
-		if choice == SHUTDOWN_CHOICE:
-			sys.exit(1)
 		print("Please select the shutdown timer:")
 		print("\t[1] for 30mins")
 		print("\t[2] for 1hour")
@@ -31,6 +29,8 @@ def main_menu():
 		print(f"\t[{ABORT_CHOICE}] for Abort Shutdown")
 		print(f"\t[{SHUTDOWN_CHOICE}] for Exit")
 		choice = int(input("Choice: "))
+		if choice == SHUTDOWN_CHOICE:
+			sys.exit(1)
 		process_choice(choice)
 
 
